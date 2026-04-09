@@ -6,11 +6,11 @@
             <template #default="{ key, tabs, tabEvents }">
                 <div class="tabs is-toggle is-fullwidth no-scrollbars"
                     :class="`is-${size}`">
-                    <ul class="tab-list has-background-grey-light">
+                    <ul class="tab-list enso-tabs-surface">
                         <li :class="{ 'is-active': tab.active }"
                             v-for="tab in tabs"
                             :key="key(tab.id)">
-                            <a :class="{ 'has-background-white has-text-grey-dark': tab.active }"
+                            <a :class="{ 'enso-tab-active': tab.active }"
                                 :disabled="tab.disabled || null"
                                 v-on="tabEvents(tab)">
                                 <slot name="label"
@@ -59,6 +59,8 @@ export default {
         position: relative;
 
         .tabs.is-fullwidth.is-toggle > .tab-list {
+            background: var(--bulma-card-header-background-color);
+            border: 1px solid var(--enso-surface-border);
             border-radius: 6px;
 
             li {
@@ -71,15 +73,28 @@ export default {
             }
 
             a {
+                color: var(--bulma-text);
                 transition: background 0.3s;
                 border: unset;
                 border-radius: 6px;
-                opacity: 0.7;
+                opacity: 0.65;
+                background: transparent;
+                height: 1.75rem;
 
                 &[disabled] {
-                    opacity: .4;
+                    color: light-dark(
+                        color-mix(in srgb, var(--bulma-text) 68%, var(--bulma-text-light)),
+                        color-mix(in srgb, var(--bulma-text-light) 84%, var(--bulma-text-strong))
+                    );
+                    opacity: .8;
                     cursor: not-allowed;
                 }
+            }
+
+            .is-active > a,
+            a.enso-tab-active {
+                background: var(--enso-surface);
+                color: var(--bulma-text-strong);
             }
         }
     }
