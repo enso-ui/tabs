@@ -20,8 +20,14 @@
   },
   "homepage": "https://github.com/enso-ui/tabs#readme",
   "dependencies": {
-    "animate.css": "^4.0.0",
-    "bulma": "^0.9.0",
-    "vue": "^3.0"
+    "animate.css": "^4.0.0"
+  },
+  "peerDependencies": {
+    "bulma": "^1.0.4",
+    "vue": "^3.5.0"
+  },
+  "devDependencies": {
+    "bulma": "^1.0.4",
+    "vue": "^3.5.0"
   }
 }
