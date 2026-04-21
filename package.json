@@ -1,33 +1,33 @@
 {
-  "name": "@enso-ui/tabs",
-  "version": "3.1.1",
-  "description": "Simply Tabs",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/enso-ui/tabs.git"
-  },
-  "keywords": [
-    "vue",
-    "tabs",
-    "tab",
-    "renderless"
-  ],
-  "author": "Adrian Ocneanu <aocneanu@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/enso-ui/tabs/issues"
-  },
-  "homepage": "https://github.com/enso-ui/tabs#readme",
-  "dependencies": {
-    "animate.css": "^4.0.0"
-  },
-  "peerDependencies": {
-    "bulma": "^1.0.4",
-    "vue": "^3.5.0"
-  },
-  "devDependencies": {
-    "bulma": "^1.0.4",
-    "vue": "^3.5.0"
-  }
+    "name": "@enso-ui/tabs",
+    "version": "3.1.1",
+    "description": "Tab primitives and Bulma tab shells for Enso UI.",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/enso-ui/tabs.git"
+    },
+    "keywords": [
+        "vue",
+        "tabs",
+        "tab",
+        "renderless"
+    ],
+    "author": "Adrian Ocneanu <aocneanu@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/enso-ui/tabs/issues"
+    },
+    "homepage": "https://github.com/enso-ui/tabs#readme",
+    "dependencies": {
+        "animate.css": "^4.0.0"
+    },
+    "peerDependencies": {
+        "bulma": "^1.0.4",
+        "vue": "^3.5.0"
+    },
+    "devDependencies": {
+        "bulma": "^1.0.4",
+        "vue": "^3.5.0"
+    }
 }
