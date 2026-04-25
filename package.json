@@ -1,6 +1,6 @@
 {
     "name": "@enso-ui/tabs",
-    "version": "3.1.1",
+    "version": "3.1.2",
     "description": "Tab primitives and Bulma tab shells for Enso UI.",
     "main": "index.js",
     "repository": {
