@@ -73,11 +73,10 @@ export default {
             }
 
             a {
-                color: var(--bulma-text);
-                transition: background 0.3s;
-                border: unset;
+                color: var(--bulma-text-light);
+                transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+                border: 1px solid transparent;
                 border-radius: 6px;
-                opacity: 0.65;
                 background: transparent;
                 height: 1.75rem;
 
@@ -94,6 +93,8 @@ export default {
             .is-active > a,
             a.enso-tab-active {
                 background: var(--enso-surface);
+                border-color: var(--enso-surface-border);
+                box-shadow: 0 1px 2px color-mix(in srgb, var(--bulma-text) 8%, transparent);
                 color: var(--bulma-text-strong);
             }
         }
